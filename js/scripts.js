@@ -48,9 +48,7 @@ $(document).on('ready', function() {
     {
       breakpoint: 767,
       settings: {
-        centerPadding: '0',
         variableWidth: false,
-        centerMode: false,
         adaptiveHeight: true,
         mobileFirst: true
       }
