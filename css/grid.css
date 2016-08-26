@@ -616,7 +616,7 @@ footer.footer.p32.width {
 		right: 0;
 	}
 }
-@media (min-width: 1366px){
+@media (min-width: 1381px){
 	.trailer_block_inner {
 		left: 450px !important;
 		right: 450px !important;
