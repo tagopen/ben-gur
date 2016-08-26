@@ -41,13 +41,14 @@ $(document).on('ready', function() {
     {
       breakpoint: 1199,
       settings: {
-        centerMode: true,
-        variableWidth: true
+        variableWidth: true,
+        centerMode: false
       }
     },
     {
       breakpoint: 767,
       settings: {
+        centerMode: false,
         variableWidth: false,
         adaptiveHeight: true,
         mobileFirst: true

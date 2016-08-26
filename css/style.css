@@ -588,3 +588,8 @@ header.header {
     filter: none;
   }
 }
+@media only screen and (max-width: 767px) {
+  .slider-film .slick-slide img {
+    height: auto;
+  }
+}
