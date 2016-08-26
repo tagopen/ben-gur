@@ -131,6 +131,11 @@ body {
   float: right;
 }
 
+.row:before, .row:after {
+  content: " ";
+  display: table;
+}
+
 .clearfix:before, .clearfix:after {
   content: " ";
   display: table;
@@ -194,13 +199,12 @@ header.header {
 }
 
 .creater {
+  margin-top: 393px;
+  margin-bottom: 45px;
   font: 400 45px/45px "FrizItalic", sans-serif;
   color: #fff;
   text-align: center;
-}
-.creater margin {
-  top: 400px;
-  bottom: 45px;
+  letter-spacing: 1px;
 }
 
 .title_font {
@@ -221,7 +225,7 @@ header.header {
 }
 
 .title {
-  margin: 0 auto 70px;
+  margin: 51px auto 70px;
   width: 954px;
   height: 260px;
   background: url("../img/startitle.png") 50% 0 no-repeat;
@@ -229,7 +233,7 @@ header.header {
 }
 
 .subtitle {
-  font: 400 69px/79px "Friz", "bebas_bold", sans-serif;
+  font: 400 79px/70px "Friz", "bebas_bold", sans-serif;
   color: #fff;
   margin: 0;
   margin-top: -100px;
@@ -239,6 +243,7 @@ header.header {
 }
 
 .subtitle--red {
+  padding-top: 30px;
   color: #c00;
   font: 400 38px/40px "Friz", "bebas_bold", sans-serif;
   text-align: center;
@@ -247,7 +252,7 @@ header.header {
 .buy {
   display: inline-block;
   vertical-align: middle;
-  margin: 18px 45px 18px 128px;
+  margin: 65px 31px 18px 128px;
   padding: 6px 167px;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
@@ -260,7 +265,7 @@ header.header {
   -webkit-transition: all 0.3s ease-out;
   -ms-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-  font: 400 48px/77px "Friz", "bebas_bold", sans-serif;
+  font: 400 41px/77px "FrizBold", "bebas_bold", sans-serif;
   text-align: center;
   text-decoration: none;
 }
@@ -269,6 +274,10 @@ header.header {
   color: #ffffff;
   box-shadow: 0px 25px 71px #101833;
   border-color: #003cff;
+}
+
+.kin {
+  margin-top: 44px;
 }
 
 .film_age {
@@ -352,11 +361,11 @@ header.header {
 }
 
 .container.intro {
+  margin: 0 auto;
+  padding-top: 45px;
   color: #fff;
   text-align: center;
-  margin: 0 auto;
-  letter-spacing: 2.2px;
-  padding-top: 45px;
+  letter-spacing: 1.3px;
 }
 
 .screenshot_title.title_font {
