@@ -68,8 +68,7 @@ footer.footer.p32.width {
 			width:100%;
 		}
 	.title {
-
-		margin-top:209px!important;
+		margin-top:80px!important;
 		background: url(images/startitle.png) 50% 0 no-repeat;
 		background-size: cover;
 		width: 100%!important;
@@ -83,7 +82,7 @@ footer.footer.p32.width {
 		letter-spacing:0.5px!important;
 	}
 	.buy {
-		padding: 10px 90px;
+		padding: 0;
 		margin-top: 0;
 	}
 	.film_age{
@@ -105,8 +104,8 @@ footer.footer.p32.width {
 		white-space: initial!important;
 	}
 	.intro_inner {
-		padding: 0 10px;
-		font: 400 32px/36px 'startrek', 'bebas_bold', sans-serif;
+		padding: 0 50px !important;
+		font: 400 32px/36px 'Friz', 'bebas_bold', sans-serif;
 		max-width: 1100px;
 	}
 	.container.intro {
@@ -117,6 +116,7 @@ footer.footer.p32.width {
 	}
 	.container.map_title {
 		width: 100%!important;
+		padding: 30px 0 50px !important;
 	}
 	.rasp_place {
 		line-height: 13px!important;
@@ -383,19 +383,19 @@ footer.footer.p32.width {
 		content: '';
 	}
 	.slider-film .slick-next, .slider-film .slick-next:hover, .slider-film .slick-next:focus{
-		right: 65px;
+		right: 65px !important;
 	}
 }
 @media (max-width: 968px){
 .slider-film .slick-prev,
 	.slider-film .slick-prev:hover,
 	.slider-film .slick-prev:focus{
-		left: 40px;
+		left: 20px !important;
 	}
 	.slider-film .slick-next,
 	.slider-film .slick-next:hover,
 	.slider-film .slick-next:focus{
-		right: 60px;
+		right: 20px !important;
 	}
 	.slider-film .slick-prev,
 	.slider-film .slick-prev:hover,
@@ -406,12 +406,21 @@ footer.footer.p32.width {
 		transform: scale(0.6);
 	}
 	.slick-prev, .slick-next{
-		top: 30% !important;
+		top: 40% !important;
+	}
+	.box_actors{
+		width: 930px !important;
+	}
+	.actor__img{
+		width: 40% !important;
+	}
+	.actor__name{
+		width: 60% !important;
 	}
 }
 @media (max-width: 769px){
 	.intro_inner{
-		font: 400 30px/35px 'startrek', 'bebas_bold', sans-serif;
+		font: 400 30px/35px 'Friz', 'bebas_bold', sans-serif;
 		padding-top: 15px;
 	}
 	.title{
@@ -454,6 +463,9 @@ footer.footer.p32.width {
 	.slick-prev, .slick-next{
 		top: 40% !important;
 	}
+	.box_actors{
+		width: 730px !important;
+	}
 }	
 @media (max-width: 480px){
 	.tailer_block_outer.container{
@@ -476,10 +488,10 @@ footer.footer.p32.width {
 @media all and (max-width: 480px) and (min-width: 400px){
 	.cast{    padding-top: 300px!important;}
 .title{		height: 110px!important;	}
-.subtitle{font: 400 35px/40px 'startrek', 'bebas_bold', sans-serif!important;margin-top: 0px;}
+.subtitle{font: 400 35px/40px 'Friz', 'bebas_bold', sans-serif!important;margin-top: 0px;}
 .buy{
     padding: 12px 57px!important;
-    font: 400 24px/26px 'startrek', 'bebas_bold', sans-serif!important;
+    font: 400 24px/26px 'Friz', 'bebas_bold', sans-serif!important;
     margin: 0;
     margin-top: 25px!important;
     border: 2px solid #fff;
@@ -488,10 +500,10 @@ footer.footer.p32.width {
 @media all and  (max-width: 400px) and (min-width: 330px){
 	.cast{    padding-top: 260px!important;}
 .title{height: 110px!important;}
-.subtitle{font: 400 35px/40px 'startrek', 'bebas_bold', sans-serif!important;margin-top: 0px;}
+.subtitle{font: 400 35px/40px 'Friz', 'bebas_bold', sans-serif!important;margin-top: 0px;}
 .buy{
     padding: 12px 57px!important;
-    font: 400 24px/26px 'startrek', 'bebas_bold', sans-serif!important;
+    font: 400 24px/26px 'Friz', 'bebas_bold', sans-serif!important;
     margin: 0;
     margin-top: 25px!important;
     border: 2px solid #fff;
@@ -500,10 +512,10 @@ footer.footer.p32.width {
 @media all and  (max-width: 330px) and (min-width: 0px){
 	.cast{   padding-top: 210px!important;}
 .title{	height: 110px!important;}
-.subtitle{font: 400 35px/40px 'startrek', 'bebas_bold', sans-serif!important;margin-top: 0px;}
+.subtitle{font: 400 35px/40px 'Friz', 'bebas_bold', sans-serif!important;margin-top: 0px;}
 .buy{
     padding: 12px 57px!important;
-    font: 400 24px/26px 'startrek', 'bebas_bold', sans-serif!important;
+    font: 400 24px/26px 'Friz', 'bebas_bold', sans-serif!important;
     margin: 0;
     margin-top: 25px!important;
     border: 2px solid #fff;
@@ -514,12 +526,11 @@ footer.footer.p32.width {
 		background-position: 35% 0;
 	}
 	.subtitle{
-		font: 400 56px/40px 'startrek', 'bebas_bold', sans-serif;
+		font: 400 56px/40px 'Friz', 'bebas_bold', sans-serif;
 		margin-top: 0px;
 	}
 	.buy{
-        padding: 16px 92px;
-    font: 400 33px/26px 'startrek', 'bebas_bold', sans-serif;
+    padding: 16px 92px;
     margin: 0px;
     margin-top: 25px;
     border: 2px solid #fff;
@@ -551,5 +562,8 @@ footer.footer.p32.width {
 	.slider-film .slick-next:hover,
 	.slider-film .slick-next:focus{
 		right: 0;
+	}
+	.box_actors{
+		width: 320px !important;
 	}
 }

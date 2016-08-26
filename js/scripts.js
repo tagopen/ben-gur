@@ -38,10 +38,22 @@ $(document).on('ready', function() {
     infinite: true,
     arrows: true,
     slidesToShow: 1,
-    centerPadding: '280px',
+    centerPadding: '240px',
     centerMode: true,
     slidesToScroll: 1,
     responsive: [
+       {
+      breakpoint: 1400,
+      settings: {
+        autoplay: true,
+        dots: false,
+        infinite: true,
+        centerMode: true,
+        slidesToShow: 1,
+        centerPadding: '100px',
+        initialSlide: 1
+      }
+    },
     {
       breakpoint: 968,
       settings: {
