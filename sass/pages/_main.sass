@@ -1,5 +1,26 @@
 +comment('general style')
-+ic
+
+html, body 
+  margin: 0
+  padding: 0
+body 
+  background: #000
+  font-family: 'Lato', sans-serif
+.text-left
+  text-align: left
+.text-center
+  text-align: center
+.text-right
+  text-align: right
+.pull-left
+  float: left
+.pull-right
+  float: right
+.clearfix
+  &:before,
+  &:after
+    content: ' '
+    display: table
 
 +comment("home page style")
 
@@ -22,37 +43,24 @@ header.header
   left: 0
 
 .ctabs 
-  display:none
-
-html, body 
-  margin: 0
-  padding: 0
-
-body 
-  background: #000
-  font-family: 'Lato', sans-serif
-
+  display: none
 .creater
+  margin
+    top: 400px
+    bottom: 45px
   font: 400 45px/45px 'FrizItalic', sans-serif
-  text-align: center
   color: #fff
-  margin-top: 400px
-  margin-bottom: 45px
+  text-align: center
 
-.title_font 
+.title_font
   font: 400 77px/77px 'Friz', 'bebas_bold', sans-serif
   letter-spacing: 3px
 
-.container 
-
 .container.header 
-  overflow: hidden
   width: 100%
+  overflow: hidden
   background-image: url(images/correct_bg.jpg)
-  background-repeat: no-repeat
-  background-position: 10% 0
-  -webkit-background-size: cover
-  background-size: cover
+  +cover
 
 .kin
   text-align: center
@@ -81,38 +89,34 @@ body
 .buybill
   text-align: center
 
-.buy:hover 
+.buy 
+  display: inline-block
+  vertical-align: middle
+  margin: 18px 45px 18px 128px
+  padding: 6px 167px
+  +br(7px) 
+  color: #fff
+  border: 5px solid red
+  +transition(all .3s ease-out)
+  font: 400 48px/77px 'Friz', 'bebas_bold', sans-serif
+  text-align: center
+  text-decoration: none
+  &:hover 
     background: #003cff
     color: #ffffff
     box-shadow: 0px 25px 71px #101833
     border-color: #003cff
 
-.buy 
-      color: #fff
-    border: 5px solid
-    border-radius: 7px  -webkit-transition: 0.3s
-     -moz-transition: 0.3s
-     -o-transition:0.3s 
-     transition: 0.3s
-    margin: 18px 45px 18px 128px
-    text-align: center
-    padding: 6px 167px
-    line-height: 60px
-    display: inline-block
-    text-decoration: none
-    vertical-align: middle
-    font: 400 48px/77px 'Friz', 'bebas_bold', sans-serif
-
 .film_age
-   border: 3px solid #fff
-    border-radius: 50%
-    padding: 20px 23px 20px 18px
-    font-size: 31px
-    display: inline-block
-    margin-top: 14px
-    vertical-align: middle
-    color: #fff
-    font-family: 'bebas_bold'
+  border: 3px solid #fff
+  border-radius: 50%
+  padding: 20px 23px 20px 18px
+  font-size: 31px
+  display: inline-block
+  margin-top: 14px
+  vertical-align: middle
+  color: #fff
+  font-family: 'bebas_bold'
 
 .container.slides 
   position: relative
@@ -161,7 +165,7 @@ body
 
 
 .dot.active 
-  background:#F00
+  background-color: #F00 
 
 
 .dot 
@@ -181,11 +185,11 @@ body
   padding-top: 45px
 
 .screenshot_title.title_font 
-    font: 400 43px/53px 'Friz', 'bebas_bold', sans-serif
-    text-transform: uppercase
-    text-align: center
-    color: #fff
-    margin-bottom: 30px
+  font: 400 43px/53px 'Friz', 'bebas_bold', sans-serif
+  text-transform: uppercase
+  text-align: center
+  color: #fff
+  margin-bottom: 30px
 
 
 .intro_inner
@@ -327,11 +331,11 @@ body
   margin: 0 auto
 
 #carousel 
-  width:1366px
-  height:300px
-  position:relative
-  clear:both
-  overflow:hidden
+  width: 1366px
+  height: 300px
+  position: relative
+  clear: both
+  overflow: hidden
 
 #carousel img 
   visibility:hidden
@@ -357,30 +361,29 @@ body
   height: 150px
   display: block
 
-.slider-film .slick-next:hover,
-.slider-film .slick-prev:hoveropacity: 1
-.slider-film .slick-next,
-.slider-film .slick-prev
-  width: 79px
-  height: 150px
-  z-index: 10
-      zoom: 0.4  -webkit-transition: 0.3s
-     -moz-transition: 0.3s
-     -o-transition:0.3s 
-     transition: 0.3s
-    opacity: 0.3
+.slider-film 
+  .slick
+    &-next,
+    &-prev
+      width: 79px
+      height: 150px
+      z-index: 10
+      +transition(all .3s ease-out)
+      opacity: 0.3
+      zoom: 0.4
+      &:hover
+        opacity: 1
 
 
 .slider-film .slick-next,
 .slider-film .slick-next:hover,
 .slider-film .slick-next:focus
-
-  background: url(images/arrowright.png)
+  background: transparent url("../img/arrowright.png") no-repeat center center
   right: 120px
 
 .slider-film .slick-prev,
 .slider-film .slick-prev:hover,
 .slider-film .slick-prev:focus
-  background: url(images/arrowleft.png)
+  background: transparent url("../img/arrowleft.png") no-repeat center center
   left: 65px
 

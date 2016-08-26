@@ -101,15 +101,39 @@
 /* ---------------------------------------- */
 /* G E N E R A L    S T Y L E               */
 /* ---------------------------------------- */
-.ic {
-  display: inline-block;
-  vertical-align: middle;
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #000;
+  font-family: "Lato", sans-serif;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
   text-align: center;
 }
-.ic:before {
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
+
+.text-right {
+  text-align: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
 }
 
 /* ---------------------------------------- */
@@ -165,22 +189,18 @@ header.header {
   left: 0;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background: #000;
-  font-family: "Lato", sans-serif;
+.ctabs {
+  display: none;
 }
 
 .creater {
   font: 400 45px/45px "FrizItalic", sans-serif;
-  text-align: center;
   color: #fff;
-  margin-top: 400px;
-  margin-bottom: 45px;
+  text-align: center;
+}
+.creater margin {
+  top: 400px;
+  bottom: 45px;
 }
 
 .title_font {
@@ -189,13 +209,15 @@ body {
 }
 
 .container.header {
-  overflow: hidden;
   width: 100%;
+  overflow: hidden;
   background-image: url(images/correct_bg.jpg);
   background-repeat: no-repeat;
-  background-position: 10% 0;
   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
+  background-position: 50% 50%;
 }
 
 .kin {
