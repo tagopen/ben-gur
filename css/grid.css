@@ -21,9 +21,6 @@ body {
 section.width.p16.tnav {
 	overflow: visible;
 }
-.container {
-	width:1366px;
-}
 .container.sh_title, .container.trailer_block, .container.trailer_title, .container.intro, .container.slides {
 	width:100%;
 }
@@ -31,7 +28,7 @@ section.width.p16.tnav {
 	max-width: 1100px;
 }
 .tailer_block_outer.container {
-	position: absolute;
+	position: relative;
 	height: 300px;
 	margin: 0 auto;
 	top: 30px;
@@ -124,14 +121,10 @@ footer.footer.p32.width {
 		z-index: 9;
 	}
 	.trailer_block_inner {
-		left: 0!important;
-		right: 0!important;
+		left: 200px !important;
+		right: 200px !important;
 		bottom: -65px!important;
 		top: 20px!important;
-	}
-	.trailer_frame {
-		right: 70px!important;
-		left: 70px!important;
 	}
 	.container.slider_title {
 		padding-top: 160px;
@@ -444,6 +437,10 @@ footer.footer.p32.width {
 		padding-top: 0;
 		margin-top: 0;
 	}
+	.trailer_block_inner {
+    left: 40px !important;
+    right: 40px !important;
+  }
 	.container.trailer_title{
 		padding-top: 0;
 		padding-bottom: 0;
@@ -524,6 +521,10 @@ footer.footer.p32.width {
 		left: 0 !important;
 		right: 0 !important;
 	}
+	.trailer_block_inner {
+    left: 0px !important;
+    right: 0px !important;
+  }
 	.slider-film .img-responsive{
   	max-width: 100%;
 	}
@@ -613,5 +614,11 @@ footer.footer.p32.width {
 	.slider-film .slick-next:hover,
 	.slider-film .slick-next:focus{
 		right: 0;
+	}
+}
+@media (min-width: 1366px){
+	.trailer_block_inner {
+		left: 450px !important;
+		right: 450px !important;
 	}
 }
