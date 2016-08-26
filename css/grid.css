@@ -67,13 +67,6 @@ footer.footer.p32.width {
 	.container {
 			width:100%;
 		}
-	.title {
-		margin-top:80px!important;
-		background: url(images/startitle.png) 50% 0 no-repeat;
-		background-size: cover;
-		width: 100%!important;
-		margin-bottom: 0;
-	}
 	.subtitle {
 		font-size: 65px;
 	}
@@ -84,9 +77,6 @@ footer.footer.p32.width {
 	.buy {
 		padding: 0;
 		margin-top: 0;
-	}
-	.film_age{
-		vertical-align: top;
 	}
 	.slider_outer {
 		height: 227px;
@@ -409,7 +399,7 @@ footer.footer.p32.width {
 		top: 40% !important;
 	}
 	.box_actors{
-		width: 930px !important;
+		width: 770px !important;
 	}
 	.actor__img{
 		width: 40% !important;
@@ -423,8 +413,14 @@ footer.footer.p32.width {
 		font: 400 30px/35px 'Friz', 'bebas_bold', sans-serif;
 		padding-top: 15px;
 	}
+	.title{
+		padding: 0 140px;
+	}
 	.creater{
 		font-size: 30px !important;
+	}
+	.film_age{
+		top: 80px !important;
 	}
 	.box_actors{
 		width: 730px !important;
@@ -435,13 +431,11 @@ footer.footer.p32.width {
 	.actor__name{
 		width: 50% !important;
 	}
-	.title{
-		-webkit-background-size: contain;
-		background-size: contain;
-		height: 240px;
-	}
 	.subtitle {
-		margin-top: -60px;
+		font-size: 44px !important;
+	}
+	.buybill{
+		padding: 0 180px;
 	}
 	.container.intro{
 		padding-top: 0;
@@ -480,6 +474,44 @@ footer.footer.p32.width {
 	.tailer_block_outer.container{
 		height: 210px;
 	}
+	.creater{
+		margin-top: 160px !important;
+		margin-bottom: 20px !important;
+		font-size: 16px !important;
+	}
+	.title{
+		padding: 0 30px !important;
+		margin-top: 0 !important;
+	}
+	.title_font{
+		font-size: 24px !important; 
+	}
+	.subtitle{
+		font-size: 20px !important;
+	}
+	.buybill{
+		padding: 0 70px ! important;
+	}
+	.film_age{
+		font-size: 12px !important;
+		padding: 8px !important;
+		right: 10px !important;
+		top: 45px !important;
+	}
+	.kin{
+		margin-top: 0 !important;
+		padding: 0 40px !important;
+	}
+	.intro_inner{
+		padding: 0 30px !important;
+		font: 400 14px/18px 'Friz', 'bebas_bold', sans-serif!important;
+	}
+	.container.intro{
+		padding-top: 0 !important;
+	}
+	.container.trailer_block{
+		height: 305px !important;
+	}
 	.container.slider_title{
 		padding-top: 50px;
 	}
@@ -493,17 +525,29 @@ footer.footer.p32.width {
 	.slick-prev, .slick-next{
 		top: 33% !important;
 	}
+	.actor__img{
+		width: 100% !important;
+		padding: 0 25px
+	}
+	.actor__name{
+		width: 100% !important;
+		padding: 0 50px;
+		margin-bottom: 25px;
+	}
+	.actor__name p{
+		font-size: 19px !important;
+	}
+	.actor__name span{
+		font-size: 14px !important;
+	}
 }
 @media all and (max-width: 480px) and (min-width: 400px){
 	.cast{    padding-top: 300px!important;}
 .title{		height: 110px!important;	}
 .subtitle{font: 400 35px/40px 'Friz', 'bebas_bold', sans-serif!important;margin-top: 0px;}
 .buy{
-    padding: 12px 57px!important;
-    font: 400 24px/26px 'Friz', 'bebas_bold', sans-serif!important;
     margin: 0;
     margin-top: 25px!important;
-    border: 2px solid #fff;
 	}
 }
 @media all and  (max-width: 400px) and (min-width: 330px){
@@ -511,23 +555,16 @@ footer.footer.p32.width {
 .title{height: 110px!important;}
 .subtitle{font: 400 35px/40px 'Friz', 'bebas_bold', sans-serif!important;margin-top: 0px;}
 .buy{
-    padding: 12px 57px!important;
-    font: 400 24px/26px 'Friz', 'bebas_bold', sans-serif!important;
     margin: 0;
     margin-top: 25px!important;
-    border: 2px solid #fff;
 	}
 }
 @media all and  (max-width: 330px) and (min-width: 0px){
-	.cast{   padding-top: 210px!important;}
-.title{	height: 110px!important;}
-.subtitle{font: 400 35px/40px 'Friz', 'bebas_bold', sans-serif!important;margin-top: 0px;}
+.cast{   padding-top: 210px!important;}
+.subtitle{font: 400 20px/22px 'Friz', 'bebas_bold', sans-serif!important;margin-top: 0px;}
 .buy{
-    padding: 12px 57px!important;
-    font: 400 24px/26px 'Friz', 'bebas_bold', sans-serif!important;
     margin: 0;
     margin-top: 25px!important;
-    border: 2px solid #fff;
 	}
 }
 @media (max-width: 767px){
@@ -546,8 +583,7 @@ footer.footer.p32.width {
     margin-top: 25px;
 	}
 	.film_age{
-		    font-size: 18px;
-    margin-top: 24px!important;
+		font-size: 18px;
     border: 2px solid #fff;
     text-align: center;
     display: block;
