@@ -16,6 +16,9 @@ body
   float: left
 .pull-right
   float: right
+.row,
+  &:before,
+  &:after
 .clearfix
   &:before,
   &:after
@@ -56,20 +59,17 @@ header.header
   font: 400 77px/77px 'Friz', 'bebas_bold', sans-serif
   letter-spacing: 3px
 
-.container.header 
+.header 
   width: 100%
   overflow: hidden
-  background-image: url(images/correct_bg.jpg)
-  +cover
-
-.kin
-  text-align: center
+  background-image: url('../img/header_bg.jpg')
+  +cover(center top)
 
 .title 
   margin: 0 auto 70px
   width: 954px
   height: 260px
-  background: url(images/startitle.png) 50% 0 no-repeat
+  background: url('../img/startitle.png') 50% 0 no-repeat
   display: block
 
 .subtitle 
@@ -84,9 +84,6 @@ header.header
 .subtitle--red
   color: #c00
   font: 400 38px/40px 'Friz', 'bebas_bold', sans-serif
-  text-align: center
-
-.buybill
   text-align: center
 
 .buy 
@@ -206,17 +203,16 @@ header.header
   position: relative
   overflow: hidden
 
-.map_title_outer 
-  text-align: center
-  letter-spacing: 4px
-  color: #fff
+.map_title_outer
   font: 500 43px/53px 'Friz', 'bebas_bold', sans-serif
+  color: #fff
+  letter-spacing: 4px
 
 .container.map 
+  position: relative
   width: 100%
   height: 310px
   background: #ccc
-  position: relative
 
 .container.sh_title 
   background: #fff
@@ -251,17 +247,17 @@ header.header
   right: 200px
   left: 120px
   bottom: -200px
-  box-shadow: 0 44px 80px rgba(0, 0, 0, 0.38)
   background-color: transparent
+  +bs( 0 44px 80px rgba(0, 0, 0, 0.38) )
 
 .trailer_btn_play
   position: absolute
-  left: 50%
   top: 50%
+  left: 50%
   margin: -61px 0 0 -61px
-  background: url(images/play-button.png) no-repeat scroll center center
   height: 122px
   width: 122px
+  background: url('../img/play-button.png') no-repeat scroll center center
 
 .trailer_frame 
   position: absolute
@@ -269,23 +265,14 @@ header.header
   left: 0
   bottom: 0
   right: 0
-  background: url(images/trailerbg.jpg)
-  background-repeat:no-repeat
-  background-size: cover
-  background-position: center center
+  background: url('../img/trailerbg.jpg') no-repeat scroll 0 0
+  +cover
   cursor: pointer
   z-index: 100
 
 .box_actors
   width: 1170px
   margin: 0 auto
-
-.box_actors:before,
-.box_actors:after,
-.row:before,
-.row:after
-  display: table
-  content: ''
 
 .row:after,
 .box_actors:after
@@ -298,92 +285,64 @@ header.header
   width: 70%
 
 .actor__name p
-  color: #fff
+  margin: 35px 0 20px
   font: 400 26px/26px 'Friz', sans-serif
   text-transform: uppercase
-  margin: 35px 0 20px
+  color: #fff
 
 .actor__name span
-  color: #f4b989
-  font: 400 20px/28px 'FrizItalic', sans-serif
-  text-transform: uppercase
   display: block
-
-.fl
-  float: left
-  text-align: left
-
-.fr
-  float: right
-  text-align: right
+  font: 400 20px/28px 'FrizItalic', sans-serif
+  color: #f4b989
+  text-transform: uppercase
 
 .container_outer 
-  background: url(images/sliderbg.png)
-  background-position: 50% 0, 50% 100%
-  background-repeat: no-repeat
   padding: 85px 0 194px
+  background: #0e0603 url('../img/sliderbg.jpg') no-repeat
+  +cover(center bottom)
 
-.container.slider_title 
-  padding-top: 50px
-  text-align: center
-  color: #fff
-  position: relative
-  margin: 0 auto
-
-#carousel 
-  width: 1366px
-  height: 300px
-  position: relative
-  clear: both
-  overflow: hidden
-
-#carousel img 
-  visibility:hidden
-  cursor:pointer
-  width: 480px
-  height: auto
-
-.slider-film
-  padding-top: 40px
-
-.slider-film .slick-slide img
-  filter: grayscale(100%)
-  height: 500px
-  display: inline-block
-  
-.slider-film .slick-active img
-  filter: grayscale(0%)
-
-.slider-film .slick-next:before,
-.slider-film .slick-prev:before
-  content: ''
-  width: 79px
-  height: 150px
-  display: block
-
+.container
+  .slider_title 
+    position: relative
+    margin: 0 auto
+    padding-top: 50px
+    color: #fff
+    text-align: center
 .slider-film 
+  padding-top: 40px
   .slick
+    &-slide
+      img
+        display: inline-block
+        height: 500px
+        +grayscale(100%)
+    &-active 
+      img
+        +grayscale(0%)
     &-next,
     &-prev
       width: 79px
       height: 150px
-      z-index: 10
+      opacity: 1
       +transition(all .3s ease-out)
-      opacity: 0.3
-      zoom: 0.4
+      zoom: .4
+      z-index: 10
       &:hover
         opacity: 1
-
-
-.slider-film .slick-next,
-.slider-film .slick-next:hover,
-.slider-film .slick-next:focus
-  background: transparent url("../img/arrowright.png") no-repeat center center
-  right: 120px
-
-.slider-film .slick-prev,
-.slider-film .slick-prev:hover,
-.slider-film .slick-prev:focus
-  background: transparent url("../img/arrowleft.png") no-repeat center center
-  left: 65px
+      &:before
+        content: ''
+        display: block
+        width: 79px
+        height: 150px
+    &-next,
+    &-next:hover,
+    &-next:focus
+      right: 120px
+      background: transparent url("../img/arrowright.png") no-repeat 0 0
+    &-prev,
+    &-prev:hover,
+    &-prev:focus
+      left: 65px
+      background: transparent url("../img/arrowleft.png") no-repeat 0 0
+      
 

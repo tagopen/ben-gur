@@ -1,144 +1,194 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-   <title>Бэн-Гур</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>Бэн-Гур</title>
 
-   <link href="https://kassa.rambler.ru/s/1606021958/dist/css/main.css?v=1606021958" rel="stylesheet" type="text/css"> <!--для отображения расписания -->
+    <!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+    <script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
 
-   <link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-   <link href='css/schedule.css' rel='stylesheet' type='text/css'>
-   <link href="css/style.css" rel="stylesheet" type='text/css'>
-   <link href="css/grid.css" rel="stylesheet" type='text/css'>
-   <link href="css/slick.css" rel="stylesheet" type='text/css'>
-   <link href="css/slick-theme.css" rel="stylesheet" type='text/css'>
+
+    <script>loadCSS( "https://kassa.rambler.ru/s/1606021958/dist/css/main.css?v=1606021958", false, "all" );</script>
+    <script>loadCSS( "https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic", false, "all" );</script>
+    <script>loadCSS( "css/grid.css?ver=1.0.0", false, "all" );</script>
+    <script>loadCSS( "css/schedule.min.css?ver=1.0.0", false, "all" );</script>
+    <script>loadCSS( "css/slick.css?ver=1.0.0", false, "all" );</script>
+    <script>loadCSS( "css/slick-theme.css?ver=1.0.0", false, "all" );</script>
+    <script>loadCSS( "css/style.css?ver=1.0.0", false, "all" );</script>
+
+    <!-- Load CSS Compiled without JS -->
+    <noscript>
+      <link href="https://kassa.rambler.ru/s/1606021958/dist/css/main.css?v=1606021958" rel="stylesheet" type="text/css"> <!--для отображения расписания -->
+
+      <!-- Google-font Lato CSS -->
+      <link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+      <link href='css/schedule.min.css' rel='stylesheet' type='text/css'>
+      <link href="css/grid.css" rel="stylesheet" type='text/css'>
+
+      <!-- Slick-Slider CSS -->
+      <link href="css/slick.css" rel="stylesheet" type='text/css'>
+      <link href="css/slick-theme.css" rel="stylesheet" type='text/css'>
+
+      <!-- Custom CSS  -->
+      <link rel="stylesheet" href="css/style.css">
+    </noscript>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
   <body>
-  	<div id="skrollr-body">
-  		<div class="container header">
+    <div id="skrollr-body">
+      <div class="container header">
         <div class="creater">фильм Тимура Бекмамбетова</div>
         <div class="title"></div>
         <div class="subtitle">В КИНО С 8 СЕНТЯБРЯ</div>
         <div class="subtitle--red">В 3D И 2D</div>
 
-        <div class="buybill">
+        <div class="text-center buybill">
           <a href="#schedule" class="buy title_font">КУПИТЬ БИЛЕТ</a>
           <span class="film_age">+12</span>
         </div>
 
-        <div class="kin">
-          <img src="img/kin4.png" alt="">
+        <div class="text-center kin">
+          <img class="img-responsive" src="img/kin4.png" alt="">
         </div>
-
 
         <div class="container intro">
-         <div class="intro_inner">
-          История Бен-Гура, потомка знатного иудейского рода, который был предан своим лучшим другом-римлянином. Проведя много лет в рабстве на римских галерах, Бен-Гур в итоге получает возможность вернуться на родину и отомстить обидчику.
+          <div class="intro_inner">
+            История Бен-Гура, потомка знатного иудейского рода, который был предан своим лучшим другом-римлянином. Проведя много лет в рабстве на римских галерах, Бен-Гур в итоге получает возможность вернуться на родину и отомстить обидчику.
+          </div>
         </div>
+
+        <div class="container trailer_title title_font" id="trailer">трейлер</div>
+        <div class="container trailer_block">
+          <div class="tailer_block_outer container">
+            <div class="trailer_block_inner">
+              <div class="trailer_frame">
+                <div class="trailer_btn_play"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="container map_title">
+          <div class="text-center map_title_outer title_font">В КИНОТЕАТРАХ</div>
+        </div>
+
       </div>
 
-      <div class="container trailer_title title_font" id="trailer">трейлер</div>
-      <div class="container trailer_block">
-        <div class="tailer_block_outer container">
-          <div class="trailer_block_inner">
-            <div class="trailer_pull-right text-rightame">
-              <div class="trailer_btn_play"></div>
+    </div>	
+
+    <div class="container map" id="map_canvas"></div>
+    <div id="schedule" class="container sh_title">
+      <div class="sh_title_inner"></div>
+      <div class="sh_block"></div>
+    </div>
+
+    <div class="container_outer">
+      <div class="container_actors">
+        <div class="clearfix box_actors">
+
+          <div class="screenshot_title title_font">Актеры</div>
+          <div class="row">
+            <div class="pull-left text-left actor__img">
+              <img class="img-responsive" src="img/actor1.png" alt="">
+            </div>
+            <div class="pull-left text-left actor__name">
+              <p>Джек Хьюстон</p>
+              <span>Раб</span>
+              <span>Бунтарь</span>
+              <span>Победитель</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="pull-right text-right actor__img">
+              <img class="img-responsive" src="img/actor2.png" alt="">
+            </div>
+            <div class="pull-right text-right actor__name">
+              <p>Моран Фриман</p>
+              <span>Наставник</span>
+              <span>Образец</span>
+              <span>Покровитель</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="pull-left text-left actor__img">
+              <img class="img-responsive" src="img/actor3.png" alt="">
+            </div>
+            <div class="pull-left text-left actor__name">
+              <p>Тоби Кеббелл</p>
+              <span>Брат</span>
+              <span>Предатель</span>
+              <span>Гордость Рима</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="pull-right text-right actor__img">
+              <img class="img-responsive" src="img/actor4.png" alt="">
+            </div>
+            <div class="pull-right text-right actor__name">
+              <p>Назанин Бониади</p>
+              <span>Защитница</span>
+              <span>Наперсница</span>
+              <span>Вдохновительница</span>
             </div>
           </div>
         </div>
       </div>
 
-
-      <div class="container map_title">
-        <div class="map_title_outer title_font">В КИНОТЕАТРАХ</div>
-      </div>
-
-    </div>
-
-  </div>	
-
-  <div class="container map" id="map_canvas"></div>
-  <div id="schedule" class="container sh_title">
-   <div class="sh_title_inner"></div>
-   <div class="sh_block"></div>
-  </div>
-
-  <div class="container_outer">
-    <div class="container_actors">
-      <div class="box_actors">
-
-        <div class="screenshot_title title_font">Актеры</div>
-        <div class="row">
-          <div class="pull-left text-left actor__img">
-            <img src="img/actor1.png" alt="">
+      <div class="container slider_title">
+        <div class="screenshot_title title_font">кадры из фильма</div>
+        <section class="slider-film">
+          <div>
+            <img class="img-responsive" src="img/slider1.png" class="img-responsive">
           </div>
-          <div class="pull-left text-left actor__name">
-            <p>Джек Хьюстон</p>
-            <span>Раб</span>
-            <span>Бунтарь</span>
-            <span>Победитель</span>
+          <div>
+            <img class="img-responsive" src="img/slider2.png" class="img-responsive">
           </div>
-        </div>
-        <div class="row">
-          <div class="pull-right text-right actor__img">
-            <img src="img/actor2.png" alt="">
+          <div>
+            <img class="img-responsive" src="img/slider3.png" class="img-responsive">
           </div>
-          <div class="pull-right text-right actor__name">
-            <p>Моран Фриман</p>
-            <span>Наставник</span>
-            <span>Образец</span>
-            <span>Покровитель</span>
-          </div>
-        </div>
-        <div class="row">
-          <div class="pull-left text-left actor__img">
-            <img src="img/actor3.png" alt="">
-          </div>
-          <div class="pull-left text-left actor__name">
-            <p>Тоби Кеббелл</p>
-            <span>Брат</span>
-            <span>Предатель</span>
-            <span>Гордость Рима</span>
-          </div>
-        </div>
-        <div class="row">
-          <div class="pull-right text-right actor__img">
-            <img src="img/actor4.png" alt="">
-          </div>
-          <div class="pull-right text-right actor__name">
-            <p>Назанин Бониади</p>
-            <span>Защитница</span>
-            <span>Наперсница</span>
-            <span>Вдохновительница</span>
-          </div>
-        </div>
+        </section>
       </div>
     </div>
-    
-    <div class="container slider_title">
-      <div class="screenshot_title title_font">кадры из фильма</div>
-      <section class="slider-film">
-       <div>
-        <img src="img/slider1.png" class="img-responsive">
-      </div>
-      <div>
-        <img src="img/slider2.png" class="img-responsive">
-      </div>
-      <div>
-        <img src="img/slider3.png" class="img-responsive">
-      </div>
-    </section>
-  </div>
-  </div>
+    <!-- Load Scripts Start -->
+    <!--<script>var scr = {"scripts":[
+      {"src" : "js/jquery-1.12.2.min.js", "async" : false},
+      {"src" : "js/TicketManager.min.js", "async" : false},
+      {"src" : "https://maps.googleapis.com/maps/api/js?sensor=true", "async" : false},
+      {"src" : "js/gmap.js", "async" : false},
+      {"src" : "js/schedule.min.js", "async" : false},
+      {"src" : "js/skrollr.js", "async" : false},
+      {"src" : "js/slick.min.js", "async" : false},
+      {"src" : "js/scripts.js", "async" : false}
+      ]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+    </script>-->
+  
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
 
-   <script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
-   <script type="text/javascript" src="js/TicketManager.js"></script>
-   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
-   <script type="text/javascript" src="js/scripts.js"></script>
-   <script type="text/javascript" src="js/gmap.js"></script>
-   <script type="text/javascript" src="js/schedule.js"></script>
-   <script type="text/javascript" src="js/skrollr.js"></script>
-   <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript" src="js/TicketManager.min.js"></script>
+
+    <!-- Google-Map JavaScript -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
+    <script type="text/javascript" src="js/gmap.js"></script>
+
+    <script type="text/javascript" src="js/schedule.min.js"></script>
+    <script type="text/javascript" src="js/skrollr.js"></script>
+
+    <!-- Slick-Slider JavaScript -->
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script type="text/javascript" src="js/scripts.js"></script>
+
   </body>
 </html>
