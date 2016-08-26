@@ -402,12 +402,6 @@ footer.footer.p32.width {
 	}
 }
 @media (max-width: 769px){
-	.header{
-		background: url("../img/header_bg760.jpg") no-repeat !important;
-	}
-	.container_outer{
-		background: #0e0603 url("../img/sliderbg760.jpg") no-repeat !important;
-	}
 	.intro_inner{
 		font: 400 30px/35px 'Friz', 'bebas_bold', sans-serif;
 		padding-top: 15px;
@@ -586,9 +580,6 @@ footer.footer.p32.width {
 	}
 }
 @media (max-width: 767px){
-	.container.header{
-		background-position: 35% 0;
-	}
 	.box_actors{
 		width: auto !important;
 	}

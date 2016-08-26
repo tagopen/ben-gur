@@ -592,4 +592,40 @@ header.header {
   .slider-film .slick-slide img {
     height: auto;
   }
+
+  .header {
+    background: #0e0603 url("../img/header_bg760.jpg") no-repeat;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center top;
+  }
+
+  .creater {
+    margin-top: 281px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .header {
+    background: #0e0603 url("../img/bg-768.jpg") no-repeat;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center top;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .header {
+    background: #0e0603 url("../img/bg-1200.jpg") no-repeat;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center top;
+  }
 }
