@@ -325,6 +325,10 @@ header.header
       width: 79px
       height: 150px
       opacity: 1
+      top: 0 !important
+      bottom: 0
+      margin: auto
+
       +transition(all .3s ease-out)
       zoom: .4
       z-index: 10
@@ -349,4 +353,9 @@ header.header
   max-width: 100%
   height: auto  
   display: inline-block    
-
++rx(1999)
+  .slider-film 
+    .slick
+      &-slide
+        img
+          +grayscale(0%)

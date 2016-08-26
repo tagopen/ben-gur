@@ -34,65 +34,28 @@ $(document).ready(function () {
 $(document).on('ready', function() {
     $(".slider-film").slick({
     autoplay: true,
-    dots: false,
     infinite: true,
-    arrows: true,
-    slidesToShow: 1,
-    centerPadding: '240px',
     centerMode: true,
-    slidesToScroll: 1,
+    centerPadding: '280px',
     responsive: [
-       {
-      breakpoint: 1400,
+    {
+      breakpoint: 1199,
       settings: {
-        autoplay: true,
-        dots: false,
-        infinite: true,
         centerMode: true,
-        slidesToShow: 1,
-        centerPadding: '100px',
-        initialSlide: 1
+        variableWidth: true
       }
     },
     {
-      breakpoint: 968,
+      breakpoint: 767,
       settings: {
-        autoplay: true,
-        dots: false,
-        infinite: true,
-        centerMode: true,
-        slidesToShow: 1,
-        centerPadding: '20px',
-        initialSlide: 1
-      }
-    },
-    {
-      breakpoint: 780,
-      settings: {
-        autoplay: true,
-        dots: false,
-        infinite: true,
-        centerMode: true,
-        slidesToShow: 1,
-        initialSlide: 1,
-        centerPadding: '25px'
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        autoplay: true,
-        dots: false,
-        infinite: false,
-        centerMode: true,
-        slidesToShow: 1,
-        initialSlide: 1,
-        centerPadding: '0'
+        variableWidth: false,
+        adaptiveHeight: true,
+        mobileFirst: true
       }
     }
     ]
   });
-});	
+}); 
 
 $(document).on('ready', function() {
   $(document).ready(function() {
