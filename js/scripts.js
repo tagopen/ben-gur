@@ -42,16 +42,17 @@ $(document).on('ready', function() {
       breakpoint: 1199,
       settings: {
         variableWidth: true,
-        centerMode: false
+        centerMode: false,
       }
     },
     {
       breakpoint: 767,
       settings: {
-        centerMode: false,
         variableWidth: false,
         adaptiveHeight: true,
-        mobileFirst: true
+        mobileFirst: true,
+        centerMode: true,
+        centerPadding: '180px'
       }
     }
     ]

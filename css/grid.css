@@ -621,4 +621,7 @@ footer.footer.p32.width {
 		left: 450px !important;
 		right: 450px !important;
 	}
+	.film_age{
+		right: 20vw !important;
+	} 
 }
