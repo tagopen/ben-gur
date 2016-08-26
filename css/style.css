@@ -578,7 +578,7 @@ header.header {
   display: inline-block;
 }
 
-@media only screen and (max-width: 1999px) {
+@media only screen and (max-width: 1199px) {
   .slider-film .slick-slide img {
     -webkit-filter: grayscale(0%);
     -moz-filter: grayscale(0%);
