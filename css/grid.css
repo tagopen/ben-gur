@@ -423,6 +423,18 @@ footer.footer.p32.width {
 		font: 400 30px/35px 'Friz', 'bebas_bold', sans-serif;
 		padding-top: 15px;
 	}
+	.creater{
+		font-size: 30px !important;
+	}
+	.box_actors{
+		width: 730px !important;
+	}
+	.actor__img{
+		width: 50% !important;
+	}
+	.actor__name{
+		width: 50% !important;
+	}
 	.title{
 		-webkit-background-size: contain;
 		background-size: contain;
@@ -462,9 +474,6 @@ footer.footer.p32.width {
 	}
 	.slick-prev, .slick-next{
 		top: 40% !important;
-	}
-	.box_actors{
-		width: 730px !important;
 	}
 }	
 @media (max-width: 480px){
@@ -525,15 +534,16 @@ footer.footer.p32.width {
 	.container.header{
 		background-position: 35% 0;
 	}
+	.box_actors{
+		width: auto !important;
+	}
 	.subtitle{
 		font: 400 56px/40px 'Friz', 'bebas_bold', sans-serif;
 		margin-top: 0px;
 	}
 	.buy{
-    padding: 16px 92px;
     margin: 0px;
     margin-top: 25px;
-    border: 2px solid #fff;
 	}
 	.film_age{
 		    font-size: 18px;
@@ -562,8 +572,5 @@ footer.footer.p32.width {
 	.slider-film .slick-next:hover,
 	.slider-film .slick-next:focus{
 		right: 0;
-	}
-	.box_actors{
-		width: 320px !important;
 	}
 }

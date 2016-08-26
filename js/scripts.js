@@ -75,7 +75,7 @@ $(document).on('ready', function() {
         centerMode: true,
         slidesToShow: 1,
         initialSlide: 1,
-        centerPadding: '0'
+        centerPadding: '25px'
       }
     },
     {
